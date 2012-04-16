@@ -12,14 +12,14 @@ Next, edit your lokka theme as follows. For instance, if your theme's `entry.ham
 
 ```haml
 .body
-  entry.body
+  = entry.body
 ```
 
 then you should wrap `entry.body` object with `associate_link()` method just like below.
 
 ```haml
 .body
-  associate_link entry.haml
+  = associate_link entry.haml
 ```
 
 `associate_link` is the helper method which detects ASIN/ISBN tag and replace it to Amazon associated link.
